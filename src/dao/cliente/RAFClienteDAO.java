@@ -44,7 +44,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
         try {
             arquivo.close();
         } catch (IOException e) {
-            System.out.println("N�o foi poss�vel fechar arquivo");
+            System.out.println("Não foi possível fechar arquivo");
         }
     }
 
@@ -103,7 +103,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
                     arquivo.seek(0);
                     RAFRegistroCliente registro = new RAFRegistroCliente();
 
-                    while (arquivo.getFilePointer() < arquivo.length()) { //Avan�a enquanto tiver objetos
+                    while (arquivo.getFilePointer() < arquivo.length()) { //Avança enquanto tiver objetos
                         registro.leitura(arquivo);
                         if (registro.getClienteId().equalsIgnoreCase(cliente.getClienteId())) {
                             Cliente cli = new Cliente();
@@ -179,7 +179,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
                     registro.setCpf(cliente.getCpf());
                     registro.escrita(arquivo);
                 } else {
-                    System.out.println("ClienteId n�o encontrado");
+                    System.out.println("ClienteId não encontrado");
                 }
             } catch (EOFException eof) {
             } catch (IOException io) {
@@ -224,7 +224,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
                     registro.setCpf("");
                     registro.escrita(arquivo);
                 } else {
-                    System.out.println("ClienteId n�o encontrado");
+                    System.out.println("ClienteId não encontrado");
                 }
             } catch (EOFException eof) {
             } catch (IOException io) {

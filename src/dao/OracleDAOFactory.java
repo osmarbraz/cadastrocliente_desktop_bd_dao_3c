@@ -87,7 +87,7 @@ public class OracleDAOFactory extends DAOFactory {
 
     /**
      * Operaçãp para prepara a string que ser� enviada ao banco de dados Se ela
-     * possui uma ' ser� duplicada para anular o efeito de sql injetado
+     * possui uma ' será duplicada para anular o efeito de sql injetado
      *
      * @return String texto com ' duplicado
      * @param valor string a ser preparada para envio ao banco de dados

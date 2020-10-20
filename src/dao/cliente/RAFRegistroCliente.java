@@ -4,6 +4,13 @@ import java.io.*;
 
 import entidade.Cliente;
 
+/**
+ * Implementa a classe do Registro do arquivo binário.
+ *
+ * @author osmarbraz
+ * @version 1.0
+ * @updated 19-nov-2012 10:05:17
+ */
 public class RAFRegistroCliente extends Cliente {
 
     public RAFRegistroCliente() {
