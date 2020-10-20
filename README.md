@@ -7,8 +7,8 @@
 	- 1 - Banco de Dados
 	- 2 - HashMap
 	- 3 - Arquivo Binário
-    A aplicação esta configurada para utilizar inicialmente memória principal(Hashmap) para armazenamento.
-    Se desejar utilizar outra fonte de dados, edite o arquivo src\dao\Factory.java alterando a FABRICA para outro valor.
+ - A aplicação esta configurada para utilizar inicialmente memória principal(Hashmap) para armazenamento.
+ - Se desejar utilizar outra fonte de dados, edite o arquivo src\dao\Factory.java alterando a FABRICA para outro valor.
  - Toda iteração com banco de dados é tratada diretamente pelo DAO(Data Access Object).<br>
  - Os dados de configuração (Servidor, Database, Usuario, Senha) da integração do java com o banco de dados estão no arquivo src/dao/OracleDAOFactory.java.<br>
  - A especificação da fábrica a ser utilizada é feita na interface Factory.java.
