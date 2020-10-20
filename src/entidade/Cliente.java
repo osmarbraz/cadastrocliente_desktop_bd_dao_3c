@@ -7,7 +7,7 @@ import dao.DAOFactory;
 import dao.Factory;
 
 /**
- * Classe que representa a abstra��o principal do sistema.
+ * Classe que representa a abstração principal do sistema.
  *
  * @author osmarbraz
  * @version 1.0
@@ -135,7 +135,7 @@ public class Cliente {
 
     /**
      * Retorna uma lista de objetos que atende os valores passados pelo objeto.
-     * O Id realiza compara��o e o nome realiza uma compara��o parcial.
+     * O Id realiza comparação e o nome realiza uma comparação parcial.
      */
     public List aplicarFiltro() {
         DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);
