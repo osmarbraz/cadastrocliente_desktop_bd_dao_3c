@@ -4,7 +4,7 @@ import controle.CtrCliente;
 /**
  * Classe que possui a operação main da aplicação. 
  * 
- * Server para dar inicio ao sistema.
+ * Inicializa o sistema.
  *
  * @author osmarbraz
  * @version 1.0
@@ -13,7 +13,7 @@ import controle.CtrCliente;
 public class Principal {
 
     /**
-     * Inicia a aplição.
+     * Inicia a aplicação.
      *
      * @param args args
      */
