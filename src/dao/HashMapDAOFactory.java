@@ -20,6 +20,7 @@ public class HashMapDAOFactory extends DAOFactory {
      *
      * @return ClienteDAO Um DAO para cliente
      */
+    @Override
     public ClienteDAO getClienteDAO() {
         return new HashMapClienteDAO();
     }
