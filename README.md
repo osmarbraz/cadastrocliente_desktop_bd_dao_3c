@@ -13,4 +13,5 @@
  - Os dados de configuração (Servidor, Database, Usuario, Senha) da integração do java com o banco de dados estão no arquivo src/dao/OracleDAOFactory.java.<br>
  - A especificação da fábrica a ser utilizada é feita na interface Factory.java.
  - Crie o banco de dados antes de executar o projeto, as especificações das tabelas estão no arquivo banco_oracle.sql.<br>
- - A pasta src contêm os fontes do projeto e na pasta  lib o driver jdbc para Oracle.<br>
+ - A pasta src contêm os fontes do projeto e na pasta lib o driver jdbc para Oracle.<br>
+ - A pasta test contêm os testes unitários do projeto utilizando JUnit 4.<br>

@@ -80,7 +80,7 @@ public class CtrCliente {
      * 
      * @param e Objeto do evento.
      */
-    void jBIncluir_actionPerformed(ActionEvent e) {
+    public void jBIncluir_actionPerformed(ActionEvent e) {
         Cliente cliente = new Cliente();
         cliente.setClienteId(getFrmCliente().jTClienteId.getText());
         cliente.setNome(getFrmCliente().jTNome.getText());
@@ -105,7 +105,7 @@ public class CtrCliente {
      * @param e Objeto do evento.
      */
 
-    void jBAlterar_actionPerformed(ActionEvent e) {
+    public void jBAlterar_actionPerformed(ActionEvent e) {
         Cliente cliente = new Cliente();
         cliente.setClienteId(getFrmCliente().jTClienteId.getText());
         cliente.setNome(getFrmCliente().jTNome.getText());
@@ -129,7 +129,7 @@ public class CtrCliente {
      * 
      * @param e Objeto do evento.
      */
-    void jBConsultar_actionPerformed(ActionEvent e) {
+    public void jBConsultar_actionPerformed(ActionEvent e) {
         Cliente cliente = new Cliente();
         cliente.setClienteId(getFrmCliente().jTClienteId.getText());
         boolean resultado = cliente.abrir();
@@ -147,7 +147,7 @@ public class CtrCliente {
      * 
      * @param e Objeto do evento.
      */
-    void jBExcluir_actionPerformed(ActionEvent e) {
+    public void jBExcluir_actionPerformed(ActionEvent e) {
         Cliente cliente = new Cliente();
         cliente.setClienteId(getFrmCliente().jTClienteId.getText());
         int resultado = cliente.excluir();
@@ -164,13 +164,13 @@ public class CtrCliente {
      * 
      * @param e Objeto do evento.
      */
-    void jBLimpar_actionPerformed(ActionEvent e) {
+    public void jBLimpar_actionPerformed(ActionEvent e) {
         getFrmCliente().jTClienteId.setText("");
         getFrmCliente().jTNome.setText("");
         getFrmCliente().jTCpf.setText("");
     }
 
-    void jBFechar_actionPerformed(ActionEvent e) {
+    public void jBFechar_actionPerformed(ActionEvent e) {
         System.exit(0);
     }
 
