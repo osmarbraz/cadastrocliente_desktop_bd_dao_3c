@@ -10,27 +10,26 @@ import entidade.Cliente;
 import java.util.*;
 
 public class TestDAOInclusao {
-	
-	HashMapClienteDAO DAO;
-	Cliente cliente;
 
-	@Before
-	public void inicializa()  {
-		DAO = new HashMapClienteDAO();
-		cliente = new Cliente("1","Teste","11111111111");	
-	}
+    HashMapClienteDAO DAO;
+    Cliente cliente;
 
-	@Test
-	public void testIncluir() throws Exception {
-		DAO.inserir(cliente);
-		List lista = DAO.getLista();
-		assertNotNull(lista);		
-	}
+    @Before
+    public void inicializa() {
+        DAO = new HashMapClienteDAO();
+        cliente = new Cliente("1", "Teste", "11111111111");
+    }
 
-	@After
-	public void Finaliza() throws Exception {
-		DAO = null;
-		cliente = null;
-	}
+    @Test
+    public void testIncluir() throws Exception {
+        DAO.inserir(cliente);
+        List lista = DAO.getLista();
+        assertNotNull(lista);
+    }
 
+    @After
+    public void Finaliza() throws Exception {
+        DAO = null;
+        cliente = null;
+    }
 }

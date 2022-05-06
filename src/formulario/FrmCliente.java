@@ -46,7 +46,7 @@ public class FrmCliente extends JFrame {
     }
 
     /**
-     * Description of the Method
+     * Inicializa os componentes da janela.
      */
     private void inicializar() {
         contentPane = (JPanel) this.getContentPane();
@@ -124,9 +124,9 @@ public class FrmCliente extends JFrame {
     }
 
     /**
-     * Description of the Method
+     * Processa os eventos da janela.
      *
-     * @param e Description of the Parameter
+     * @param e Evento de uma janela.
      */
     protected void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);

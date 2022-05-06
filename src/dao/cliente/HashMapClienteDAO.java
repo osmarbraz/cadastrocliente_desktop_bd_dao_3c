@@ -82,7 +82,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
     public List getLista() {
         List lista = new LinkedList();
         Iterator it = mapa.values().iterator();
-        while (it.hasNext()) { //Avan�a enquanto tiver objetos
+        while (it.hasNext()) { //Avança enquanto tiver objetos
             Cliente c = (Cliente) it.next();
             lista.add(c);
         }
@@ -98,7 +98,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
 
             //Filtro para clienteId
             if (cliente.getClienteId() != null) {
-                while (it.hasNext()) { //Avan�a enquanto tiver objetos
+                while (it.hasNext()) { //Avança enquanto tiver objetos
                     Cliente c = (Cliente) it.next();
                     if (c.getClienteId().equalsIgnoreCase(cliente.getClienteId())) {
                         lista.add(c);
@@ -107,7 +107,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
             } else {
                 //Filtro para nome
                 if (cliente.getNome() != null) {
-                    while (it.hasNext()) { //Avan�a enquanto tiver objetos
+                    while (it.hasNext()) { //Avança enquanto tiver objetos
                         Cliente c = (Cliente) it.next();
                         if (c.getNome().equalsIgnoreCase(cliente.getNome())) {
                             lista.add(c);
@@ -116,7 +116,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
                 } else {
                     //Filtro para CPF
                     if (cliente.getCpf() != null) {
-                        while (it.hasNext()) { //Avan�a enquanto tiver objetos
+                        while (it.hasNext()) { //Avança enquanto tiver objetos
                             Cliente c = (Cliente) it.next();
                             if (c.getCpf().equalsIgnoreCase(cliente.getCpf())) {
                                 lista.add(c);

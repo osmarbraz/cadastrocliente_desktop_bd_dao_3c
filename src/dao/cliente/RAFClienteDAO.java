@@ -9,7 +9,7 @@ import entidade.Cliente;
 
 /**
  * Implementa a persitência para cliente utilizando Arquivo de Acesso
- * Aleat�rio(RandomAcessFile).
+ * Aleatório(RandomAcessFile).
  *
  * @author osmarbraz
  * @version 1.0

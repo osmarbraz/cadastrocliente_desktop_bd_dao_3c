@@ -20,8 +20,8 @@ public abstract class DAOFactory {
     public abstract ClienteDAO getClienteDAO();
 
     /**
-     * Retorna a Factory do tipo especificado	
-     * 
+     * Retorna a Factory do tipo especificado
+     *
      * @param qualFabrica Especifica a fábrica a ser selecionada.
      * @return Um fábrica.
      */

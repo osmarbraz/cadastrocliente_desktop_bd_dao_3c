@@ -77,7 +77,7 @@ public class CtrCliente {
 
     /**
      * Inclui um cliente.
-     * 
+     *
      * @param e Objeto do evento.
      */
     public void jBIncluir_actionPerformed(ActionEvent e) {
@@ -98,13 +98,12 @@ public class CtrCliente {
             getFrmCliente().mostrarMensagem("CPF Invalido!");
         }
     }
-    
+
     /**
      * Altera um cliente.
-     * 
+     *
      * @param e Objeto do evento.
      */
-
     public void jBAlterar_actionPerformed(ActionEvent e) {
         Cliente cliente = new Cliente();
         cliente.setClienteId(getFrmCliente().jTClienteId.getText());
@@ -123,10 +122,10 @@ public class CtrCliente {
             getFrmCliente().mostrarMensagem("CPF Invalido!");
         }
     }
-    
+
     /**
      * Consulta um cliente.
-     * 
+     *
      * @param e Objeto do evento.
      */
     public void jBConsultar_actionPerformed(ActionEvent e) {
@@ -144,7 +143,7 @@ public class CtrCliente {
 
     /**
      * Excluí o cliente.
-     * 
+     *
      * @param e Objeto do evento.
      */
     public void jBExcluir_actionPerformed(ActionEvent e) {
@@ -161,7 +160,7 @@ public class CtrCliente {
 
     /**
      * Limpa as caixas de texto.
-     * 
+     *
      * @param e Objeto do evento.
      */
     public void jBLimpar_actionPerformed(ActionEvent e) {

@@ -1,3 +1,4 @@
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -12,17 +13,17 @@ import dao.TestClienteDAOHashMap;
 import util.TestValida;
 
 @RunWith(Suite.class)
-@SuiteClasses({TestClienteDAOHashMap.class, 
-			   TestDAOInclusao.class, 
-			   TestDAOExclusao.class,
-	           TestInclusao.class, 
-	           TestExclusao.class, 
-	           TestAlteracao.class,
-			   TestValida.class})
+@SuiteClasses({TestClienteDAOHashMap.class,
+    TestDAOInclusao.class,
+    TestDAOExclusao.class,
+    TestInclusao.class,
+    TestExclusao.class,
+    TestAlteracao.class,
+    TestValida.class})
 
 public class TesteSuite {
 
-	public static junit.framework.Test suite() {
-		return new JUnit4TestAdapter(TesteSuite.class);
-	}
+    public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(TesteSuite.class);
+    }
 }

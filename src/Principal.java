@@ -2,8 +2,8 @@
 import controle.CtrCliente;
 
 /**
- * Classe que possui a operação main da aplicação. 
- * 
+ * Classe que possui a operação main da aplicação.
+ *
  * Inicializa o sistema.
  *
  * @author osmarbraz

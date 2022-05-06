@@ -10,35 +10,34 @@ import dao.cliente.*;
 import entidade.Cliente;
 import java.util.*;
 
-
 public class TestDAOExclusao {
-	
-	HashMapClienteDAO DAO;
-	Cliente cliente;
 
-	@Before
-	public void inicializa()  {
-		DAO = new HashMapClienteDAO();
-		cliente = new Cliente("1","Teste","11111111111");	
-	}
+    HashMapClienteDAO DAO;
+    Cliente cliente;
 
-	@Test
-	public void testExclusao() {
-		DAO.inserir(cliente);
-		List lista = DAO.getLista();
+    @Before
+    public void inicializa() {
+        DAO = new HashMapClienteDAO();
+        cliente = new Cliente("1", "Teste", "11111111111");
+    }
 
-		if (lista.size() > 0) {
-			DAO.excluir(lista.get(0));
-			lista = DAO.getLista();
-			assertTrue(lista.size() == 0);
-		} else
-			assertFalse(false);
-	}
+    @Test
+    public void testExclusao() {
+        DAO.inserir(cliente);
+        List lista = DAO.getLista();
 
-	@After
-	public void Finaliza() throws Exception {
-		DAO = null;
-		cliente = null;
-	}
+        if (lista.size() > 0) {
+            DAO.excluir(lista.get(0));
+            lista = DAO.getLista();
+            assertTrue(lista.size() == 0);
+        } else {
+            assertFalse(false);
+        }
+    }
 
+    @After
+    public void Finaliza() throws Exception {
+        DAO = null;
+        cliente = null;
+    }
 }
