@@ -12,8 +12,6 @@ import entidade.Cliente;
  * Aleatório(RandomAcessFile).
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 06-nov-2013 10:05:17
  */
 public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
 

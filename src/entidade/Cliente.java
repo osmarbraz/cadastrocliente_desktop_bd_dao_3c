@@ -10,8 +10,6 @@ import dao.Factory;
  * Classe que representa a abstração principal do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 18-nov-2013 15:24:06
  */
 public class Cliente {
 

@@ -4,8 +4,6 @@ package dao.cliente;
  * Armazena os metadados para a implementação em oracle.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 14-nov-2012 16:08:58
  */
 public interface OracleClienteMetaDados {
 

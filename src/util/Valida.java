@@ -4,8 +4,6 @@ package util;
  * Classe utilitária para conter operacoes de validacao
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-nov-2012 10:09:02
  */
 public class Valida {
 
@@ -33,7 +31,7 @@ public class Valida {
             digitos = cpf.substring(9, 11);
             int soma = 0, mult = 11;
             int[] var = new int[11];
-            // Recebe os n�meros e realiza a multiplica��o e soma.   
+            // Recebe os números e realiza a multiplicação e soma.   
             for (int i = 0; i < 9; i++) {
                 var[i] = Integer.parseInt("" + cpf.charAt(i));
                 if (i < 9) {

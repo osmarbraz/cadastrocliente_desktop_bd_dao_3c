@@ -7,8 +7,6 @@ import dao.cliente.HashMapClienteDAO;
  * Implementa a fonte de dado para persistência em memória utilizando HashMap.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 14-nov-2012 16:08:57
  */
 public class HashMapDAOFactory extends DAOFactory {
 

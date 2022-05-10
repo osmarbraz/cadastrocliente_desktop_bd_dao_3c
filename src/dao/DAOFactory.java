@@ -6,8 +6,6 @@ import dao.cliente.ClienteDAO;
  * Abstrai as fontes de dados do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 07-nov-2013 21:43:35
  */
 public abstract class DAOFactory {
 

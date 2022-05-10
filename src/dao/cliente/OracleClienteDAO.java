@@ -15,8 +15,6 @@ import entidade.Cliente;
  * Implementa a persistência de cliente utilizando oracle.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 14-nov-2012 16:08:57
  */
 public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, OracleClienteMetaDados {
 

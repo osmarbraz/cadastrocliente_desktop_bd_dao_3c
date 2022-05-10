@@ -16,8 +16,6 @@ import javax.swing.JOptionPane;
  * Classe que implementa a interface principal do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 14-nov-2012 16:08:57
  */
 @SuppressWarnings("serial")
 public class FrmCliente extends JFrame {
@@ -66,7 +64,7 @@ public class FrmCliente extends JFrame {
         jBFechar = new JButton();
 
         contentPane.setLayout(null);
-        this.setSize(new Dimension(310, 220));
+        this.setSize(new Dimension(310, 230));
         this.setTitle("Cadastro de Cliente");
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {

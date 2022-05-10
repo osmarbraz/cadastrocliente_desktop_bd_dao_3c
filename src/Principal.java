@@ -7,8 +7,6 @@ import controle.CtrCliente;
  * Inicializa o sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 18-nov-2013 15:22:20
  */
 public class Principal {
 

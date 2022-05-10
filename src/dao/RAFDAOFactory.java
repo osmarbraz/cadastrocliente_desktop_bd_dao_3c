@@ -8,8 +8,6 @@ import dao.cliente.RAFClienteDAO;
  * Acesso Aleatório(RandonAcessFile).
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 6-nov-2013 16:08:57
  */
 public class RAFDAOFactory extends DAOFactory {
 

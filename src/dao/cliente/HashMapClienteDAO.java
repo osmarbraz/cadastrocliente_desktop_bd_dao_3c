@@ -13,8 +13,6 @@ import entidade.Cliente;
  * Implementa a persitência para cliente utilizando HashMap.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-nov-2012 10:05:17
  */
 public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
 

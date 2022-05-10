@@ -10,8 +10,6 @@ import util.Valida;
  * Classe que realiza a interação entre a interface e a entidade do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 18-nov-2013 15:23:38
  */
 public class CtrCliente {
 
@@ -21,7 +19,7 @@ public class CtrCliente {
      * Construtor sem argumentos.
      */
     public CtrCliente() {
-        // Instacia a janela
+        // Instancia a janela
         setFrmCliente(new FrmCliente());
 
         // Associa os eventos aos componentes
@@ -169,6 +167,11 @@ public class CtrCliente {
         getFrmCliente().jTCpf.setText("");
     }
 
+    /**
+     * Fecha o sistema.
+     *
+     * @param e Objeto do evento.
+     */
     public void jBFechar_actionPerformed(ActionEvent e) {
         System.exit(0);
     }

@@ -14,8 +14,6 @@ import dao.cliente.OracleClienteDAO;
  * Oracle.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 14-nov-2012 16:08:58
  */
 public class OracleDAOFactory extends DAOFactory {
 
