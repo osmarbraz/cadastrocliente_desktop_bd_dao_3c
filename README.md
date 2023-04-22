@@ -21,5 +21,6 @@
 
 ## Arquivos
 
+- *.sql - Script do banco de daddos.
 - build.xml - Arquivo de configuração da ferramenta de automação Ant.
 - *.bat - Arquivos de lote(Batch) de console para tarefas compilar, executar, documentar, empacotar e limpar o projeto.
