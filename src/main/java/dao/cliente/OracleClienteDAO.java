@@ -69,6 +69,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
         return lista;
     }
 
+    @Override
     public boolean inserir(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -116,6 +117,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
         return false;
     }
 
+    @Override
     public int alterar(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -161,6 +163,7 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
         return 0;
     }
 
+    @Override
     public int excluir(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -204,11 +207,13 @@ public class OracleClienteDAO extends OracleDAOFactory implements ClienteDAO, Or
     }
 
     @SuppressWarnings("rawtypes")
+    @Override
     public List getLista() {
         return select("select " + METADADOSSELECT + " from " + TABLE + " order by " + TABLE + "." + PK[0]);
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
+    @Override
     public List aplicarFiltro(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;

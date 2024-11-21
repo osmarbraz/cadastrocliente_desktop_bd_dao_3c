@@ -23,43 +23,40 @@ public class CtrCliente {
         setFrmCliente(new FrmCliente());
 
         // Associa os eventos aos componentes
-        getFrmCliente().jBIncluir
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBIncluir.addActionListener(new java.awt.event.ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         jBIncluir_actionPerformed(e);
                     }
                 });
 
-        getFrmCliente().jBAlterar
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBAlterar.addActionListener(new java.awt.event.ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         jBAlterar_actionPerformed(e);
                     }
                 });
 
-        getFrmCliente().jBConsultar
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBConsultar.addActionListener(new java.awt.event.ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         jBConsultar_actionPerformed(e);
                     }
                 });
 
-        getFrmCliente().jBExcluir
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBExcluir.addActionListener(new java.awt.event.ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         jBExcluir_actionPerformed(e);
                     }
                 });
 
-        getFrmCliente().jBLimpar
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBLimpar.addActionListener(new java.awt.event.ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         jBLimpar_actionPerformed(e);
                     }
                 });
 
-        getFrmCliente().jBFechar
-                .addActionListener(new java.awt.event.ActionListener() {
+        getFrmCliente().jBFechar.addActionListener(new java.awt.event.ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         jBFechar_actionPerformed(e);
                     }

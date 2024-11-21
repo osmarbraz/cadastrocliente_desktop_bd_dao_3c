@@ -1,9 +1,10 @@
 @echo off
 
-if not exist bin (
-	echo  *** Criando Diretorio bin ***
-	mkdir bin
+if not exist target (
+	echo  *** Criando Diretorio target ***
+	mkdir target	
+	mkdir target\classes
 )
 
 echo  *** Compilando projeto ***
-javac -cp lib/ojdbc6.jar -sourcepath src -d bin src/*.java
+javac -encoding UTF-8 -sourcepath src\main\java -d target\classes src\main\java\*.java

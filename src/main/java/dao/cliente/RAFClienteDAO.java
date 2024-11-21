@@ -21,6 +21,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
         abrirArquivo();
     }
 
+    @Override
     public void finalize() throws Throwable {
         try {
             fecharArquivo();
@@ -46,6 +47,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
         }
     }
 
+    @Override
     public boolean inserir(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -70,6 +72,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
+    @Override
     public List getLista() {
         List lista = new LinkedList();
         RAFRegistroCliente registro = new RAFRegistroCliente();
@@ -91,6 +94,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
+    @Override
     public List aplicarFiltro(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -161,6 +165,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
         }
     }
 
+    @Override
     public int alterar(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -170,7 +175,6 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
             try {
                 pos = procurarCodigo(chave);
                 if (pos != -1) {
-                    int cont = 0;
                     arquivo.seek(pos * registro.getTamanho());
                     registro.setClienteId(cliente.getClienteId());
                     registro.setNome(cliente.getNome());
@@ -206,6 +210,7 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
         return pos;
     }
 
+    @Override
     public int excluir(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -215,7 +220,6 @@ public class RAFClienteDAO extends RAFDAOFactory implements ClienteDAO {
             try {
                 pos = procurarCodigo(chave);
                 if (pos != -1) {
-                    int cont = 0;
                     arquivo.seek(pos * registro.getTamanho());
                     registro.setClienteId(-1);
                     registro.setNome("");

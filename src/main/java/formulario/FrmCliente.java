@@ -67,6 +67,7 @@ public class FrmCliente extends JFrame {
         this.setSize(new Dimension(310, 230));
         this.setTitle("Cadastro de Cliente");
         this.addWindowListener(new WindowAdapter() {
+            @Override
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }
@@ -82,7 +83,7 @@ public class FrmCliente extends JFrame {
 
         jLCpf.setBounds(new Rectangle(11, 109, 170, 17));
         jTCpf.setBounds(new Rectangle(11, 124, 120, 21));
-        jLCpf.setText("Cpf (Somente numeros)");
+        jLCpf.setText("Cpf (Somente números)");
 
         jBIncluir.setBounds(new Rectangle(200, 9, 90, 27));
         jBIncluir.setText("Incluir");
@@ -126,6 +127,7 @@ public class FrmCliente extends JFrame {
      *
      * @param e Evento de uma janela.
      */
+    @Override
     protected void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
         if (e.getID() == WindowEvent.WINDOW_CLOSING) {

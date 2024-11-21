@@ -24,10 +24,11 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
     public HashMapClienteDAO() {
         //Se o mapa estiver nulo instancia para armazenar os clientes
         if (mapa == null) {
-            mapa = new HashMap<String, Cliente>();
+            mapa = new HashMap<>();
         }
     }
 
+    @Override
     public boolean inserir(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -42,6 +43,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
         return false;
     }
 
+    @Override
     public int alterar(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;
@@ -58,6 +60,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
         return 0;
     }
 
+    @Override
     public int excluir(Object obj) {
         if (obj == null) {
             throw new NullPointerException();
@@ -77,6 +80,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
+    @Override
     public List getLista() {
         List lista = new LinkedList();
         Iterator it = mapa.values().iterator();
@@ -88,6 +92,7 @@ public class HashMapClienteDAO extends HashMapDAOFactory implements ClienteDAO {
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
+    @Override
     public List aplicarFiltro(Object obj) {
         if (obj != null) {
             Cliente cliente = (Cliente) obj;

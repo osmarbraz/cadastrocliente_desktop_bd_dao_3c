@@ -12,7 +12,6 @@ public class TestValida {
     @Before
     public void inicializa() {
         valida = new Valida();
-
     }
 
     @After

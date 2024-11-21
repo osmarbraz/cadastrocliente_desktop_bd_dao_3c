@@ -14,6 +14,7 @@ public class FrmClienteFake extends FrmCliente {
         jTCpf = new JTextField();
     }
 
+    @Override
     public void mostrarMensagem(String mensagem) {
         System.out.println("Mensagem:" + mensagem);
     }
